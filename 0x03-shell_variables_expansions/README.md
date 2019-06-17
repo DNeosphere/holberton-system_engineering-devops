@@ -1,0 +1,1 @@
+Abouth shell intialization, variables, alias command.
