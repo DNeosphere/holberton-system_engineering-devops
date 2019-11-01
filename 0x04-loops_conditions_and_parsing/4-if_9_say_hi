@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Prints "Holberton School" ten times using, says hi on 9th iteration
+num=1
+while((num <= 10))
+do
+   echo "Holberton School"
+   if [ $num -eq 9 ]
+    then
+        echo "Hi"
+    fi
+   (( num=num+1 ))
+done
