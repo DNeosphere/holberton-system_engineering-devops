@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Prints superstitious numbers using case in bash
+num=1
+while (( num<= 20))
+do
+    case $num in
+        4)
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "bad luck from Italy"
+            ;;
+        *)
+            echo $num
+            ;;
+    esac
+    (( num=num+1 ))
+done
