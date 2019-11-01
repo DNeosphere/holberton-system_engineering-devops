@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Prints superstitious numbers using case in bash
+num=1
+while (( num<= 100))
+do
+    if [[ $((num%5)) -eq 0 && $((num%3)) -eq 0 ]]
+    then
+        echo "FizzBuzz"
+    elif [[ $((num%3)) -eq 0 ]]
+    then
+        echo "Fizz"
+    elif [[ $((num%5)) -eq 0 ]]
+    then
+        echo "Buzz"
+    else
+        echo "$num"
+    fi
+    (( num=num+1 ))
+done
