@@ -3,6 +3,7 @@
 num=1
 while (( num<= 20))
 do
+    echo $num
     case $num in
         4)
             echo "bad luck from China"
@@ -12,9 +13,6 @@ do
             ;;
         17)
             echo "bad luck from Italy"
-            ;;
-        *)
-            echo $num
             ;;
     esac
     (( num=num+1 ))
