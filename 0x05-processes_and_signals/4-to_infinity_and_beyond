@@ -4,4 +4,5 @@ num=1
 while (( num ))
 do
     echo "To infinity and beyond"
+    sleep 2
 done
