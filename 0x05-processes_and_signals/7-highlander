@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Ignores a SIGTERM signal
-trap echo "I am invincible!!!"
+trap "echo \"I am invincible!!!\"" 15
 num=1
 while (( num ))
 do
