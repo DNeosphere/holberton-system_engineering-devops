@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints To infinity and beyond indefinitely.
+num=1
+while (( num ))
+do
+    echo "To infinity and beyond"
+done
