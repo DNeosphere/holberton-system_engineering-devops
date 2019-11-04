@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Ignores a SIGTERM signal
+trap echo "I am invincible!!!"
+num=1
+while (( num ))
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
