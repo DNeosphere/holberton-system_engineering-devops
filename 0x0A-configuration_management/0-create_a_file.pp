@@ -1,5 +1,5 @@
 # Creates a file
-file { '/tmp/holberton':
+file { '/etc':
 path    => '/tmp/holberton',
 content => 'I Love Puppet',
 mode    => '0744',
