@@ -1,0 +1,1 @@
+About Puppet as configuration management tool
