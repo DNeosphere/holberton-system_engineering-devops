@@ -2,5 +2,7 @@
 # installs a nginx with redirection
 apt-get update
 apt-get -y install nginx
-sed -i "19i rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+variable="rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sed -i "19i $variable" /etc/nginx/sites-available/default
 service nginx restart
