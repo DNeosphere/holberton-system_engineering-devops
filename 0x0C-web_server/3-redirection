@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# installs a nginx with redirection
+apt-get update
+apt-get -y install nginx
+newstring = "return 301 35.196.2.249/redirect_me;"
+sed -i "19i $newstring" /etc/nginx/sites-available/default
+service nginx restart
