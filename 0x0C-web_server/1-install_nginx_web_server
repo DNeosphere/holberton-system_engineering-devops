@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # uses ssh to connect to your server using the private key ~/.ssh/holberton with the user ubuntu
-sudo apt-get -y install nginx
+apt-get update
+apt-get -y install nginx
 echo "Holberton School" > /var/www/html/index.nginx-debian.html
