@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# installs a nginx with redirection
+apt-get update
+apt-get -y install haproxy=1.6.\*
+echo "frontend web_front
+   bind *:80
+   mode http
+   default_backend web_back
+
+   backend web_back
+   balance roundrobin
+   server web1 35.196.2.249:80 check
+   server web2 35.196.95.206:80 check
+" >> /etc/haproxy/haproxy.cfg
+sudo service haproxy restart
