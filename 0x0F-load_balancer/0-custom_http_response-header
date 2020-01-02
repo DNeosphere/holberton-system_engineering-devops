@@ -2,12 +2,6 @@
 # installs a nginx with redirection
 apt-get update
 apt-get -y install nginx
-echo "Holberton School" > /var/www/html/index.nginx-debian.html
-variable="rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sed -i "19i $variable" /etc/nginx/sites-available/default
-echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
-variable2="error_page 404 /custom_404.html;\nlocation = /custom_404.html {\nroot /usr/share/nginx/html;\ninternal;\n}"
-sed -i "/server_name _;/a $variable2" /etc/nginx/sites-enabled/default
 http_header="add_header X-Served-By $HOSTNAME;"
 sed -i "/sendfile on;/a $http_header" /etc/nginx/nginx.conf
 service nginx restart
