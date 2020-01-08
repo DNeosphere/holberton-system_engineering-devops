@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# run nginx as nginx
+sudo -u chown nginx:nginx /etc/nginx/nginx.cfg
+chmod 777 /etc/nginx/nginx.cfg
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+pkill apache2
+sudo -u service nginx restart
