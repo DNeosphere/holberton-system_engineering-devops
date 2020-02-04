@@ -24,7 +24,6 @@ if __name__ == "__main__":
         if task.get('userId') == user_id:
             task_list.append(task)
 
-
     """ finde completed todos """
     completed_tasks = []
     for task in task_list:
@@ -32,8 +31,8 @@ if __name__ == "__main__":
             completed_tasks.append(task)
 
     """ print with given format """
-    print("Employee {} is done with tasks({}/{}):".format(n_user.get('name'), \
-                                                          len(completed_tasks), \
+    print("Employee {} is done with tasks({}/{}):".format(n_user.get('name'),
+                                                          len(completed_tasks),
                                                           len(task_list)))
 
     for print_task in completed_tasks:
