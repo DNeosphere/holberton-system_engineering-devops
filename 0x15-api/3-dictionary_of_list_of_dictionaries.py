@@ -28,7 +28,7 @@ if __name__ == "__main__":
         task_dict['task'] = task.get('title')
         task_dict['completed'] = task.get('completed')
         task_dict['username'] = d_username.get(u_id)
-        d_users.get(u_id).append(task_dict)
+        d_users[u_id].append(task_dict)
 
     with open("todo_all_employees.json", 'w') as file:
         json.dump(d_users, file)
