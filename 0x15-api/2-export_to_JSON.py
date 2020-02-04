@@ -28,9 +28,9 @@ if __name__ == "__main__":
 
     n_dict = {}
     list_dict = []
-    task_dict = {}
 
     for n_task in task_list:
+        task_dict = {}
         task_dict['task'] = n_task.get('title')
         task_dict['completed'] = n_task.get('completed')
         task_dict['username'] = n_user.get('username')
