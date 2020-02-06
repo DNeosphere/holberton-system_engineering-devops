@@ -20,3 +20,4 @@ def number_of_subscribers(subreddit):
                               format(subreddit), headers=headers).json()
 
     return n_response.get('data').get('subscribers')
+    
