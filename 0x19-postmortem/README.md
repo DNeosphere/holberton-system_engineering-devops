@@ -14,9 +14,7 @@ Streamlining the postmortem process is key to helping your team get the most fro
 
 # Example
 
-This was made for a Wordpress server using the LAMP stack, you can find more details here
-
-[Postmortem](https://www.linkedin.com/pulse/spooky-its-postmortems-daniela-g%25C3%25B3mez/?trackingId=rUPdvABpRkCFcD22WN5bHQ%3D%3D)
+This was made for a Wordpress server using the LAMP stack, you can find more details [here](https://www.linkedin.com/pulse/spooky-its-postmortems-daniela-g%25C3%25B3mez/?trackingId=rUPdvABpRkCFcD22WN5bHQ%3D%3D)
 
 ## Author
 
